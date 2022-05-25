@@ -15,15 +15,15 @@ class App extends Component {
   componentDidMount() {
     getReservations().then(data => {
       this.setState({ reservations: data })
-      console.log(this.state.reservations)
     })
+    .catch(err => console.log(err))
   }
 
   addResy = (newResy) => {
     addReservation(newResy).then(data => {
-      console.log(data)
       this.setState({ reservations: [...this.state.reservations, data] })
     })
+    .catch(err => console.log(err))
   }
 
   render() {

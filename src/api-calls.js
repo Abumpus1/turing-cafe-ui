@@ -10,7 +10,6 @@ const getReservations = () => {
 }
 
 const addReservation = (resy) => {
-  console.log(resy);
   return fetch("http://localhost:3001/api/v1/reservations", {
     method: "POST",
     body: JSON.stringify(resy),
