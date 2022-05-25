@@ -8,7 +8,7 @@ class Form extends Component {
       name: "",
       date: "",
       time: "",
-      number: undefined
+      number: 0
     }
   }
 
@@ -18,8 +18,7 @@ class Form extends Component {
       name: this.state.name,
       date: this.state.date,
       time: this.state.time,
-      number: this.state.number,
-      id: Date.now()
+      number: parseInt(this.state.number)
     }
 
     this.props.addResy(resy)

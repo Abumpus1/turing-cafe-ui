@@ -20,7 +20,10 @@ class App extends Component {
   }
 
   addResy = (newResy) => {
-    this.setState({ reservations: [...this.state.reservations, newResy] })
+    addReservation(newResy).then(data => {
+      console.log(data)
+      this.setState({ reservations: [...this.state.reservations, data] })
+    })
   }
 
   render() {
