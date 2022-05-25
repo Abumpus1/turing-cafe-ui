@@ -9,4 +9,8 @@ const getReservations = () => {
   })
 }
 
-export default getReservations
+const addReservation = () => {
+
+}
+
+export { getReservations, addReservation }
