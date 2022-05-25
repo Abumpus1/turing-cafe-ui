@@ -1,0 +1,8 @@
+.resy {
+  background-color: white;
+  min-width: 230px;
+  min-height: 100px;
+  border: solid green 4px;
+  border-radius: 8px;
+  padding: 15px;
+}
